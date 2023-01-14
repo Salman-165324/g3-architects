@@ -1,4 +1,112 @@
-h1{
+h1 {
 
     font-size: 200px;
+}
+
+/* Common Styles and Utilities */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+
+    /* Did it so that the items don't go too wide of the screen on large monitors */
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
+/*     <!-- Nav Starts --> */
+
+
+nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Changed the margin of the left and right to fit small screen desktops. So that the margin doesn't look disproportionate */
+    margin: 50px 180px 0px 150px;
+
+}
+
+.nav-heading {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.nav-menu-items {
+
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+
+}
+
+.nav-menu-items a{
+
+    text-decoration: none;
+    color:#424242;
+}
+
+.nav-menu-items li{
+
+    padding-right: 73px;
+
+    font-weight: 500;
+    font-size: 18px;
+    color: #424242;
+    text-align: center;
+
+}
+
+.nav-menu-items li:last-child {
+    padding-right: 0px;
+}
+
+
+
+/*     <!-- Nav Ends --> */
+
+
+/* Responsive Styles */
+
+@media only screen and (max-width: 576px) {
+
+
+    nav {
+
+        margin: 20px 50px 0px 25px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-heading {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .nav-menu-items{
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .nav-menu-items li{
+
+        padding: 0px;
+        margin-bottom: 10px;
+        border-bottom: 2px solid black ;
+
+    }
+
+
+
 }
